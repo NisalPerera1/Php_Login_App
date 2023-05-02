@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Website",
+            "type": "php",
+            "request": "launch",
+            "port": 8080,
+            "pathMappings": {
+                "/var/www/html": "${workspaceRoot}"
+            },
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "^\\s*Listening on [\\w\\s]*: (https?://\\S+)",
+                "uriFormat": "%s"
+            }
+        }
+    ]
+}
