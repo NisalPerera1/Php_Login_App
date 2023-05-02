@@ -50,6 +50,8 @@
 <html>
     <head>
         <title>Register</title>
+        <link rel="stylesheet" href="styles.css">
+
     </head>
     <body>
         <?php if (isset($errors)): ?>
@@ -84,7 +86,7 @@
             </div>
             <button type="submit">Register</button>
         </form>
-        <p>Already have an account? <a href="login.php">Login here</a>.</p>
+        <p class= "para" >Already have an account? <a href="login.php">Login here</a>.</p>
 
     </body>
 </html>

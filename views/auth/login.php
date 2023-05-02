@@ -42,6 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
     <head>
         <title>Login</title>
+        <link rel="stylesheet" href="styles.css">
+
     </head>
     <body>
         <?php if (isset($errors)): ?>
@@ -63,6 +65,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <a href="register.php">Register here</a>.</p>
+        <p class= "para">Don't have an account? <a href="register.php">Register here</a>.</p>
     </body>
 </html>
