@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $errors = $authController->validateLogin($username, $password);
 
     // Check if user exists in the database
-    if (!$authController->userExists($username)) {
+    if (!$authController->getUserByUsername($username)) {
         $errors[] = 'Invalid username or password';
     }
 

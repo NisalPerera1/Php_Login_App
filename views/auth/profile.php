@@ -14,10 +14,19 @@ $username = $_SESSION['username'];
 // Display welcome message
 echo '<h1>Welcome, ' . $username . '! You have Successfully Loged in </h1>';
 
+
+echo 'Here is your Account Info </h1>';
+
+
+
 // Display logout button
 echo '<form action="logout.php" method="post">';
 echo '<input type="submit" value="Logout">';
 echo '</form>';
+
+
+
+
 
 // Handle logout logic
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
